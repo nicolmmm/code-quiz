@@ -14,8 +14,13 @@ margin: 2rem;
 
 }
 
+ul{
+    list-style-type: none;
+}
+
 li {
     line-height: 2rem;
+
     
 
 }
