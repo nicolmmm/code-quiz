@@ -38,7 +38,7 @@ submitButton.addEventListener("click", ()=>{
     if(checkTextInput()===""){return}
     li.append(checkTextInput()+ " scored " + userScore +" points" );
      savedScore= scoreUl.appendChild(li);
-    localStorage.setItem("myHighscores", JSON.stringify(savedScore))
+    localStorage.setItem("myHighscores", JSON.stringify(li))
     document.getElementById("textInput").value="";
     
 

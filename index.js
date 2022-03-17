@@ -1,3 +1,4 @@
+//grabbing all my elements
 var myCountdown=document.getElementById("timerElement")
 var question= document.getElementById("question")
 var answerOne= document.getElementById("answerOne")
@@ -6,11 +7,13 @@ var answerThree= document.getElementById("answerThree")
 var answerFour= document.getElementById("answerFour")
 var startButton= document.getElementById("startButton")
 
+//initializing score
 var score=0;
 
 var timerCount
 var timeInterval;
 
+//building my timer
 function startTimer(){
     startButton.style.display="none";
         timerCount=60
@@ -27,9 +30,8 @@ function startTimer(){
     },1000)
 }
 
-
+//start button and start game
 startButton.addEventListener("click", startQuiz)
-
 
 function startQuiz(){
     startTimer();
@@ -38,7 +40,7 @@ function startQuiz(){
 
 
 
-
+//setting functions for each correct answer to trigger next question
 function correctAnswerOne(){
     score++;
     questionTwo()
@@ -146,7 +148,7 @@ function questionFive(){
 
 
 
-
+//questions
 var questionsObject= {
 questionOne: "Inside which HTML element do we put the JavaScript?",
 questionTwo: "Where is the correct place to insert a JavaScript source?",
@@ -156,6 +158,8 @@ questionFive: "How to write an IF statement in JavaScript?"
 
 }
 
+
+//multiple choice answers
 var questionOneAnswers= [
     "<js>","<script>","<scriptong>","[javascript]"
 ]
