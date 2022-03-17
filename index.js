@@ -152,7 +152,7 @@ questionOne: "Inside which HTML element do we put the JavaScript?",
 questionTwo: "Where is the correct place to insert a JavaScript source?",
 questionThree: "What is the correct syntax for referring to an external script called 'xxx.js?'",
 questionFour: "How do you write 'Hello World' in an alert box?",
-questionFive: "some question"
+questionFive: "How to write an IF statement in JavaScript?"
 
 }
 
@@ -173,7 +173,7 @@ var questionFourAnswers= [
 ]
 
 var questionFiveAnswers= [
-    "alertBox('Hellow World')","alert('Hello World')","msg('Hello World')","correct answer"
+    "if i=5","if i=5 then","if i == 5","if (i == 5)"
 ];
 ;
 
